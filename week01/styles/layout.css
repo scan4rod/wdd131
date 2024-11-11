@@ -13,7 +13,7 @@ body {
     font-family: Arial, sans-serif;
     display: grid;
     height: 100vh;
-    grid-template: auto auto 1fr / 1fr auto auto;
+    grid-template: auto 1fr auto / auto 1fr auto;
     min-height: 100vh;
 }
 
@@ -26,21 +26,16 @@ header {
 }
 
 .navbar {
-
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-
-    grid-column: 1 / 4;
-
-
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navbar a {
 
-    color: black;
+    color: white;
     text-decoration: none;
-    text-align: center;
+
     padding: 20px;
 
 }
